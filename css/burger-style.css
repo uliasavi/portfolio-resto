@@ -117,7 +117,16 @@ header:before{
 	.header__list li{
 		padding: 5px;
 		background-color: #fff;
-		margin: 0px 0px 20px 0px;
+		margin: 0px 0px 3% 0px;
 		text-align: center;
 	}
+	@media (max-height: 560px) {
+	.header__list{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.header__link{
+		flex:30%;
+	}
+}
 }
