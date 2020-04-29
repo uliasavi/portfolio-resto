@@ -42,8 +42,10 @@ body {
 }
 
 .header__list{
-		display: flex;
+	display: flex;
 	justify-content: space-between;
+}
+.header__link{
 }
 .header__link a{
 	color: #3b3b3b;
@@ -51,6 +53,7 @@ body {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 60px;
+
 }
 
 .main__screen{
@@ -384,7 +387,7 @@ footer{
 		.main__title{
 		font-size: 80px;
 	}
-	.main__subtitle p{
+	.main__subtitle span{
 		width: 40%;
 	}
 	.galery{
@@ -405,12 +408,13 @@ footer{
 @media (max-width: 576px){
 	.main__subtitle_span:before{
 		display: none;
+		overflow: hidden;
 	}
 	.main__subtitle_span:after{
 		display: none;
+		overflow: hidden;
 	}
 	.slider__item{
-		margin-right: 0;
 		padding-top: 30px;
 	}
 	.slider__name_p:after{
@@ -431,5 +435,10 @@ footer{
 		margin-bottom: 20px;
 		text-align: center;
 	}
-
+	.main__subtitle{
+		width: 70%;
+	}
+	.main__subtitle {
+		line-height: 20px;
+	}
 }
